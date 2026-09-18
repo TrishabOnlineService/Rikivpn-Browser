@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/action_new_tab" android:title="@string/new_tab" app:showAsAction="never" />
+    <item android:id="@+id/action_new_incognito_tab" android:title="@string/new_incognito_tab" app:showAsAction="never" />
+    <item android:id="@+id/action_bookmark_page" android:title="@string/add_bookmark" app:showAsAction="never" />
+    <item android:id="@+id/action_desktop_mode" android:title="@string/desktop_mode" app:showAsAction="never" android:checkable="true" />
+    <item android:id="@+id/action_reader_mode" android:title="@string/reader_mode" app:showAsAction="never" />
+    <item android:id="@+id/action_find_in_page" android:title="@string/find_in_page" app:showAsAction="never" />
+    <item android:id="@+id/action_voice_search" android:title="@string/voice_search" app:showAsAction="never" />
+    <item android:id="@+id/action_qr_scan" android:title="@string/qr_scan" app:showAsAction="never" />
+    <item android:id="@+id/action_share" android:title="@string/share" app:showAsAction="never" />
+    <item android:id="@+id/action_add_shortcut" android:title="@string/add_to_home_screen" app:showAsAction="never" />
+    <item android:id="@+id/action_bookmarks" android:title="@string/bookmarks_title" app:showAsAction="never" />
+    <item android:id="@+id/action_history" android:title="@string/history_title" app:showAsAction="never" />
+    <item android:id="@+id/action_downloads" android:title="@string/downloads_title" app:showAsAction="never" />
+    <item android:id="@+id/action_passwords" android:title="@string/passwords_title" app:showAsAction="never" />
+    <item android:id="@+id/action_vpn" android:title="@string/vpn_status" app:showAsAction="never" />
+    <item android:id="@+id/action_settings" android:title="@string/settings_title" app:showAsAction="never" />
+</menu>

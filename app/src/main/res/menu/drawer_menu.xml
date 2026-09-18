@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_open_browser"
+            android:icon="@drawable/ic_tab_placeholder"
+            android:title="@string/nav_open_browser" />
+        <item
+            android:id="@+id/nav_select_location"
+            android:icon="@drawable/ic_location"
+            android:title="@string/tab_select_location" />
+        <item
+            android:id="@+id/nav_bookmarks"
+            android:icon="@drawable/ic_tab_placeholder"
+            android:title="@string/bookmarks_title" />
+        <item
+            android:id="@+id/nav_history"
+            android:icon="@drawable/ic_tab_placeholder"
+            android:title="@string/history_title" />
+        <item
+            android:id="@+id/nav_downloads"
+            android:icon="@drawable/ic_download"
+            android:title="@string/downloads_title" />
+        <item
+            android:id="@+id/nav_passwords"
+            android:icon="@drawable/ic_reveal"
+            android:title="@string/passwords_title" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_about"
+            android:title="@string/settings_title" />
+        <item
+            android:id="@+id/nav_support"
+            android:icon="@drawable/ic_shield_check"
+            android:title="@string/nav_support" />
+        <item
+            android:id="@+id/nav_privacy_policy"
+            android:icon="@drawable/ic_privacy"
+            android:title="@string/legal_title" />
+        <item
+            android:id="@+id/nav_disclaimer"
+            android:icon="@drawable/ic_privacy"
+            android:title="@string/disclaimer_title" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_about"
+            android:title="@string/about_title" />
+    </group>
+</menu>

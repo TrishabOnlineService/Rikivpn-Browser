@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/riki_bg_top">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:elevation="3dp"
+        android:paddingStart="4dp"
+        android:paddingEnd="16dp"
+        android:background="@color/riki_surface">
+
+        <ImageButton
+            android:id="@+id/btnSettingsBack"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:padding="10dp"
+            android:background="@drawable/ripple_nav_item"
+            android:src="@drawable/ic_back"
+            android:contentDescription="@string/back" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:text="@string/settings_title"
+            android:textColor="@color/riki_text_primary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/riki_bg_top">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView style="@style/SettingsSectionHeader" android:text="@string/section_appearance" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <RadioButton android:id="@+id/radioLight" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/theme_light" android:textColor="@color/riki_text_primary" />
+            <RadioButton android:id="@+id/radioDark" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/theme_dark" android:textColor="@color/riki_text_primary" />
+            <RadioButton android:id="@+id/radioAmoled" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/theme_amoled" android:textColor="@color/riki_text_primary" />
+        </RadioGroup>
+
+        <TextView style="@style/SettingsSectionHeader" android:text="@string/section_language" />
+        <Spinner
+            android:id="@+id/spinnerLanguage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" />
+
+        <TextView style="@style/SettingsSectionHeader" android:text="@string/section_privacy_security" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial android:id="@+id/swAdBlock" style="@style/SettingsSwitch" android:text="@string/ad_blocker" />
+        <com.google.android.material.switchmaterial.SwitchMaterial android:id="@+id/swTrackerBlock" style="@style/SettingsSwitch" android:text="@string/tracker_blocker" />
+        <com.google.android.material.switchmaterial.SwitchMaterial android:id="@+id/swPopupBlock" style="@style/SettingsSwitch" android:text="@string/popup_blocker" />
+        <com.google.android.material.switchmaterial.SwitchMaterial android:id="@+id/swHttpsOnly" style="@style/SettingsSwitch" android:text="@string/https_only" />
+        <com.google.android.material.switchmaterial.SwitchMaterial android:id="@+id/swSafeBrowsing" style="@style/SettingsSwitch" android:text="@string/safe_browsing" />
+
+        <TextView
+            android:id="@+id/rowClearData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="@string/clear_browsing_data"
+            android:textColor="@color/riki_danger"
+            android:background="?attr/selectableItemBackground" />
+
+        <TextView style="@style/SettingsSectionHeader" android:text="@string/section_browsing" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial android:id="@+id/swDataSaver" style="@style/SettingsSwitch" android:text="@string/data_saver_mode" />
+        <com.google.android.material.switchmaterial.SwitchMaterial android:id="@+id/swSearchSuggestions" style="@style/SettingsSwitch" android:text="@string/search_suggestions" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/search_engine"
+            android:textColor="@color/riki_text_secondary" />
+        <Spinner
+            android:id="@+id/spinnerSearchEngine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/search_engines"
+            android:layout_marginBottom="16dp" />
+
+        <TextView style="@style/SettingsSectionHeader" android:text="@string/section_vpn" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial android:id="@+id/swVpnAutoConnect" style="@style/SettingsSwitch" android:text="@string/vpn_auto_connect" />
+        <com.google.android.material.switchmaterial.SwitchMaterial android:id="@+id/swVpnAutoReconnect" style="@style/SettingsSwitch" android:text="@string/vpn_auto_reconnect" />
+        <com.google.android.material.switchmaterial.SwitchMaterial android:id="@+id/swVpnKillSwitch" style="@style/SettingsSwitch" android:text="@string/vpn_kill_switch" />
+        <com.google.android.material.switchmaterial.SwitchMaterial android:id="@+id/swVpnDnsProtection" style="@style/SettingsSwitch" android:text="@string/vpn_dns_protection" />
+        <com.google.android.material.switchmaterial.SwitchMaterial android:id="@+id/swVpnAutoFastest" style="@style/SettingsSwitch" android:text="@string/vpn_auto_fastest" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/vpn_protocol"
+            android:textColor="@color/riki_text_secondary" />
+        <RadioGroup
+            android:id="@+id/radioGroupProtocol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="24dp">
+            <RadioButton android:id="@+id/radioUdp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="UDP" android:textColor="@color/riki_text_primary" />
+            <RadioButton android:id="@+id/radioTcp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="TCP" android:textColor="@color/riki_text_primary" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/vpn_advanced_note"
+            android:textColor="@color/riki_text_secondary"
+            android:textSize="12sp"
+            android:layout_marginBottom="24dp" />
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
